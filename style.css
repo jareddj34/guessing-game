@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(166, 231, 243);
+}
+
+.explanation {
+    display: none;
+}
+
+.question {
+    margin: 50px;
+}
+
+.questions {
+    width: 50%;
+    display: inline-block;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+    transform: scale(1.01); /* Makes the button grow bigger */
+    transition: transform 0.2s; /* Smooth transition effect */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    grid-gap: 10px; /* Adjust spacing between buttons */
+}
