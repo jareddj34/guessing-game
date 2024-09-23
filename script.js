@@ -18,6 +18,14 @@ three.style.display = "none";
 let totalQuestions = document.querySelectorAll(".question").length;
 let answeredQuestions = 0;
 
+// Audio Stuff
+// const audio1 = new Audio();
+// audio1.src = "ocarina.mp3";
+
+// function playAudio() {
+//     audio1.play();
+// }
+
 function check(event) {
     let button = event.target;
 
@@ -37,6 +45,12 @@ function check(event) {
         explanation.style.display = "block";
         let gotit = question.querySelector(".gotit");
         gotit.textContent = "Correct! ";
+
+        let buttonContent = button.textContent;
+        console.log(buttonContent);
+
+        let audio = new Audio(`sounds/${buttonContent}.wav`);
+        audio.play();
 
         score++;
         for (let scoreElement of scoreElements) {
