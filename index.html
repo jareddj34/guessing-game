@@ -3,242 +3,46 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Music Quiz</title>
+        <title>Home</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
+        <script src="pianoscript.js" defer></script>
     </head>
     <body>
-        <h1>Good luck!</h1>
-        <p>Score: <span class="score">0</span></p>
-
-        <div class="questions">
-            <hr />
-            <div class="question">
-                <h2>
-                    Which instrument is known for being a string instrument?
-                </h2>
-                <div class="button-grid">
-                    <button>Clarinet</button>
-                    <button>Trumpet</button>
-                    <button class="correct">Guitar</button>
-                    <button>Drums</button>
-                </div>
-                <div class="explanation">
-                    <h3 class="gotit"></h3>
-                    <h3>Hover over the guitar to learn more!</h3>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img
-                                    src="https://pngimg.com/d/guitar_PNG3354.png"
-                                    width="200px"
-                                />
-                            </div>
-                            <div class="flip-card-back">
-                                <h3 class="">
-                                    The guitar is a string instrument. The
-                                    strings are tuned to E, A, D, G, B, and E.
-                                    Some special guitars even have an extra
-                                    string, or two, allowing the musician to
-                                    have a wider range.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="question">
-                <h2>Which instrument is usually the heaviest?</h2>
-                <div class="button-grid">
-                    <button class="correct">Piano</button>
-                    <button>Drums</button>
-                    <button>Tuba</button>
-                    <button>Accordian</button>
-                </div>
-                <div class="explanation">
-                    <h3 class="gotit"></h3>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img
-                                    src="https://static.vecteezy.com/system/resources/thumbnails/013/484/897/small_2x/realistic-black-grand-piano-musical-instrument-3d-rendering-icon-on-transparent-background-png.png"
-                                    width="200px"
-                                    style="margin-top: 20px"
-                                />
-                            </div>
-                            <div class="flip-card-back">
-                                <h3 class="">
-                                    The Piano is typically the heaviest. Smaller
-                                    pianos can weigh up to a few hundred pounds,
-                                    while larger grand pianos can weigh over
-                                    1000 pounds!
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="question">
-                <h2>What family of instruments does the clarinet belong to?</h2>
-                <div class="button-grid">
-                    <button>Percussion</button>
-                    <button>String</button>
-                    <button class="correct">Woodwind</button>
-                    <button>Brass</button>
-                </div>
-                <div class="explanation">
-                    <h3 class="gotit"></h3>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png"
-                                    width="200px"
-                                    style="margin-top: 20px"
-                                />
-                            </div>
-                            <div class="flip-card-back">
-                                <h3 class="">
-                                    The clarinet is a woodwind instrument.
-                                    Woodwind instruments are classified by
-                                    blowing air through a mouthpiece, and
-                                    changing the pitch by opening and closing
-                                    holes on the instrument.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="question">
-                <h2>
-                    Which instrument is commonly associated with jazz music?
-                </h2>
-                <div class="button-grid">
-                    <button>Harp</button>
-                    <button class="correct">Saxophone</button>
-                    <button>Violin</button>
-                    <button>Accordion</button>
-                </div>
-                <div class="explanation">
-                    <h3 class="gotit"></h3>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img
-                                    src="https://www.selmer.fr/cdn/shop/products/sax_alto_Supreme_recto_verni.png?v=1678797767"
-                                    width="200px"
-                                    style="margin-top: 20px"
-                                />
-                            </div>
-                            <div class="flip-card-back">
-                                <h3 class="">
-                                    The saxophone is commonly associated with
-                                    jazz music. It was invented by Adolphe Sax
-                                    in 1846. Some of the most famous sax players
-                                    include: Charlie Parker, Ornette Coleman,
-                                    John Coltrane, and much more.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="question">
-                <h2>Where did the guitar most likely originate from?</h2>
-
-                <div class="button-grid">
-                    <button>China</button>
-                    <button class="correct">Spain</button>
-                    <button>United States</button>
-                    <button>France</button>
-                </div>
-                <div class="explanation">
-                    <h3 class="gotit"></h3>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img
-                                    src="https://acousticmusic.org/wp-content/uploads/2020/10/1630-guitar-cropped-1.jpg"
-                                    width="200px"
-                                    height="250px"
-                                />
-                            </div>
-                            <div class="flip-card-back">
-                                <h3 class="">
-                                    The guitar most likely originated from
-                                    Spain. The first classical guitars were
-                                    called vihuelas, and were made in the 15th
-                                    century. The consisted of four double
-                                    strings, and different variations took place
-                                    from there.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="question">
-                <h2>Which instrument makes this sound?</h2>
-                <audio
-                    controls
-                    src="ocarina.mp3"
-                    style="margin-bottom: 20px"
-                ></audio>
-                <div class="button-grid">
-                    <button>Oboe</button>
-                    <button>Clarinet</button>
-                    <button>Flute</button>
-                    <button class="correct">Ocarina</button>
-                </div>
-                <div class="explanation">
-                    <h3 class="gotit"></h3>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img
-                                    src="https://static.vecteezy.com/system/resources/previews/044/198/051/original/high-quality-wooden-ocarina-isolated-on-a-clear-background-png.png"
-                                    width="200px"
-                                    style="margin-top: 20px"
-                                />
-                            </div>
-                            <div class="flip-card-back">
-                                <h3 class="">
-                                    The sound comes from an Ocarina! The ocarina
-                                    is another instrument in the woodwind
-                                    family. The instrument dates back thousands
-                                    of years to Central America.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr />
-        <div class="final-message">
+        <div class="home">
+            <h1 class="header">Music Quiz</h1>
             <h2>
-                You finished! You got a score of:
-                <span class="score">0</span>
+                Welcome to the music quiz! Test your skills, and see if you are
+                good enough to become a musician.
             </h2>
-            <div class="two">
-                <img
-                    src="https://www.icegif.com/wp-content/uploads/2023/08/icegif-751.gif"
-                    width="200px"
-                />
-                <p>Brush up on your music skills</p>
+            <h3>
+                To start the quiz, press the piano keys in this order: C, D, E.
+            </h3>
+            <p>Hint: its the first three white keys.</p>
+            <div class="button">
+                <button class="start" onclick="location.href='quiz.html'">
+                    Start Quiz
+                </button>
             </div>
-            <div class="three">
-                <img
-                    src="https://media0.giphy.com/media/hZj44bR9FVI3K/200w.gif?cid=6c09b9520psqxevysxoasygc4wn63twg1orvuou4qb5kptlz&ep=v1_gifs_search&rid=200w.gif&ct=g"
-                />
-                <p>You could be a musician!</p>
-            </div>
+
+            <ul class="piano-keys">
+                <li class="key white" data-key="a"></li>
+                <li class="key black" data-key="w"></li>
+                <li class="key white" data-key="s"></li>
+                <li class="key black" data-key="e"></li>
+                <li class="key white" data-key="d"></li>
+                <li class="key white" data-key="f"></li>
+                <li class="key black" data-key="t"></li>
+                <li class="key white" data-key="g"></li>
+                <li class="key black" data-key="y"></li>
+                <li class="key white" data-key="h"></li>
+                <li class="key black" data-key="u"></li>
+                <li class="key white" data-key="j"></li>
+                <li class="key white" data-key="k"></li>
+                <li class="key black" data-key="o"></li>
+                <li class="key white" data-key="l"></li>
+                <li class="key black" data-key="p"></li>
+                <li class="key white" data-key=";"></li>
+            </ul>
         </div>
     </body>
 </html>
